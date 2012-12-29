@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
+        <title></title>
+        <link href="exCss.css" type="text/css" rel="stylesheet"/>
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js">
+        </script>
+        <script type="text/javascript">
+            <!--
+            var image1=new Image()
+            image1.src="1.jpg"
+            var image2=new Image()
+            image2.src="2.jpg"
+            var image3=new Image()
+            image3.src="3.jpg"
+            var image4=new Image()
+            image4.src="4.jpg"
+            var image5=new Image()
+            image5.src="5.jpg"
+            var image5=new Image()
+            image5.src="5.jpg"
+            var image7=new Image()
+            image7.src="7.jpg"
+            var image8=new Image()
+            image8.src="8.jpg"
+            //-->
+        </script>
+    </head>
+    <body>
+
+        <!--<div style="background: yellow">-->
+        <img src="1.jpg" name="slide" style="height:100px;width:100px;position:absolute" />
+        <!--</div>-->
+
+        <script>
+            <!--
+            // variable that will increment through the images
+             
+            $(document).ready(function(){
+                slideMe();
+            });
+            function slideMe(){
+                var step=1
+                var img=$("img");
+                img.animate({left:'35%', height:'250px', width:'200px'},2000);
+                img.animate({left:'90%', height:'100px', width:'100px'},2000,function slideIt(){
+                    if (!document.images)
+                        return
+                
+                    document.images.slide.src=eval("image"+step+".src")
+                    if (step<8)
+                        step++
+                    //                    else
+                    //                        step=1
+                    //                    //call function "slideit()" every 4.1 seconds
+                    //                    setTimeout("slideIt()",500)
+                    slideIt()});
+                //if browser does not support the image object, exit.
+                setInterval(slideMe(), 4100)
+                slideMe()
+            }
+            
+            
+                        
+                
+        
+            //-->
+        </script>
+
+    </body>
+</html>

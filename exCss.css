@@ -1,0 +1,25 @@
+/* 
+    Document   : exCss
+    Created on : Dec 29, 2012, 9:57:51 AM
+    Author     : Aspire
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+root { 
+    display: block;
+}
+
+.span40{
+    width: 40%;
+    margin-left: 28%;
+    border: solid 1px blueviolet;
+    border-radius: 20px;
+}
+div{
+    margin-top: 35px;
+}
+
+body{
+    background: cornsilk;
+}
